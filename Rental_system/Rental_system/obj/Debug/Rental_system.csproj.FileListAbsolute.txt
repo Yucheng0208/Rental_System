@@ -1,0 +1,10 @@
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.csproj.AssemblyReference.cache
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.Form1.resources
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.Properties.Resources.resources
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.csproj.GenerateResource.cache
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.csproj.CoreCompileInputs.cache
+D:\GitHub\Rental_system\Rental_system\Rental_system\bin\Debug\Rental_system.exe.config
+D:\GitHub\Rental_system\Rental_system\Rental_system\bin\Debug\Rental_system.exe
+D:\GitHub\Rental_system\Rental_system\Rental_system\bin\Debug\Rental_system.pdb
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.exe
+D:\GitHub\Rental_system\Rental_system\Rental_system\obj\Debug\Rental_system.pdb
