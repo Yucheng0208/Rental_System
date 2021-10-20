@@ -12,6 +12,8 @@ namespace Rental_system
 {
     public partial class Form1 : Form
     {
+        private object checkBox;
+
         public Form1()
         {
             InitializeComponent();
@@ -60,7 +62,7 @@ namespace Rental_system
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -70,7 +72,7 @@ namespace Rental_system
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -155,7 +157,21 @@ namespace Rental_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            comboBox1.SelectedItem = default;
+            comboBox2.SelectedItem = default;
+            comboBox3.SelectedItem = default;
+            comboBox1.Text = "請選擇班級";
+            comboBox2.Text = "請選擇模式";
+            comboBox3.Text = "請選擇地點";
+            textBox1.Text = null;
+            textBox2.Text = null;
+            textBox3.Text = null;
+            textBox4.Text = null;
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -165,12 +181,75 @@ namespace Rental_system
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                if (comboBox1.SelectedItem == default)
+                {
+                    MessageBox.Show("請選擇班級", "系統提示");
+                }
+                else if (comboBox2.SelectedItem == null)
+                {
+                    MessageBox.Show("請選擇模式", "系統提示");
+                }
+                else if (comboBox3.SelectedItem == null)
+                {
+                    MessageBox.Show("請選擇地點", "系統提示");
+                }
+                else if (textBox1.Text == null)
+                {
+                    MessageBox.Show("請輸入學號", "系統提示");
+                }
+                else if (textBox2.Text == null)
+                {
+                    MessageBox.Show("請輸入姓名", "系統提示");
+                }
+                else if (textBox3.Text == null)
+                {
+                    MessageBox.Show("請輸入手機", "系統提示");
+                }
+
+                else if (!(checkBox1.Checked || checkBox2.Checked || checkBox3.Checked || checkBox4.Checked))
+                {
+                    MessageBox.Show("請至少輸入一樣設備", "系統提示");
+                    //MessageBox.Show($"{checkBox1.Checked} {checkBox2.Checked} {checkBox3.Checked } {checkBox4.Checked}");
+                    //MessageBox.Show($"{!checkBox1.Checked || !checkBox2.Checked || !checkBox3.Checked || !checkBox4.Checked}");
+                }
+                else
+                {
+                    string device = "";
+                    if (checkBox1.Checked)
+                    {
+                        device = device.Insert(device.Length, $"{checkBox1.Text}");
+                    }
+                    else if (checkBox2.Checked)
+                    {
+                        device = device.Insert(device.Length, $"{checkBox2.Text}");
+                    }
+                    else if (checkBox3.Checked)
+                    {
+                        device = device.Insert(device.Length, $"{checkBox3.Text}");
+                    }
+                    else if (checkBox4.Checked)
+                    {
+                        device = device.Insert(device.Length, $"{checkBox4.Text}");
+                    }
+                    else if (checkBox5.Checked)
+                    {
+                        device = device.Insert(device.Length, $"{textBox4.Text}");
+                    }
+                    MessageBox.Show($"{comboBox1.SelectedItem} {textBox1.Text} \n {textBox2.Text} \n {textBox3.Text} \n {comboBox2.SelectedItem} {comboBox3.SelectedItem} \n {device}","借用資訊");
+                }
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+            }
+
         }
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
-            
+
         }
     }
 }

@@ -88,11 +88,11 @@ namespace Rental_system
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
             this.label3.Location = new System.Drawing.Point(39, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 23);
+            this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "DATETIME";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -100,11 +100,11 @@ namespace Rental_system
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(159, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 23);
+            this.label4.Size = new System.Drawing.Size(110, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "2021.10.15";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -118,11 +118,11 @@ namespace Rental_system
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(291, 87);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.Size = new System.Drawing.Size(88, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "00:00:03";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -233,6 +233,7 @@ namespace Rental_system
             // 
             // textBox3
             // 
+            this.textBox3.AllowDrop = true;
             this.textBox3.Font = new System.Drawing.Font("微軟正黑體", 12F);
             this.textBox3.Location = new System.Drawing.Point(306, 207);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -419,6 +420,7 @@ namespace Rental_system
             // 
             // button1
             // 
+            this.button1.AllowDrop = true;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button1.Location = new System.Drawing.Point(92, 448);
